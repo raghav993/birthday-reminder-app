@@ -1,1 +1,178 @@
-/* Main stylesheet */
+/* Birthday Cards */
+.birthday-card {
+    border: none;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    background: #fff;
+}
+
+.birthday-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.birthday-card img {
+    height: 220px;
+    object-fit: cover;
+}
+
+.birthday-name {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.birthday-meta {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Slider */
+.carousel-item {
+    min-height: 420px;
+    background: linear-gradient(135deg,#ff9a9e,#fad0c4);
+    color: #fff;
+}
+
+.carousel-item img {
+    border: 5px solid #fff;
+}
+
+/* Animated Text */
+.animated-text {
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.1);}
+    100% {transform: scale(1);}
+}
+
+/* Section Title */
+.section-title {
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+/* HEADER */
+.birthday-navbar {
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.birthday-navbar .navbar-brand {
+    color: #fff;
+    font-size: 20px;
+}
+
+.birthday-navbar .navbar-brand:hover {
+    color: #fff;
+}
+
+.add-btn {
+    background: #fff;
+    color: #ff4d6d;
+    font-weight: 600;
+    border-radius: 30px;
+    padding: 8px 18px;
+    transition: all 0.3s ease;
+}
+
+.add-btn:hover {
+    background: #ff4d6d;
+    color: #fff;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* FOOTER */
+.birthday-footer {
+    background: #fff;
+    border-top: 1px solid #f1f1f1;
+}
+
+.footer-divider {
+    background: linear-gradient(90deg, #ff758c, #ff7eb3);
+    height: 2px;
+    border: none;
+    margin: 15px 0;
+}
+
+.footer-icon {
+    display: inline-block;
+    margin-left: 12px;
+    font-size: 20px;
+    color: #ff4d6d;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-icon:hover {
+    transform: scale(1.2);
+    color: #ff758c;
+}
+
+
+/* BIRTHDAY SLIDER */
+.birthday-slider {
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    border-radius: 0 0 30px 30px;
+}
+
+.slider-content {
+    min-height: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Instagram Story Ring */
+.story-ring {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    padding: 5px;
+    background: linear-gradient(45deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5);
+}
+
+.story-ring img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #fff;
+}
+
+/* Animated Text */
+.animated-text {
+    color: #fff;
+    font-weight: 600;
+    animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0); }
+}
+
+.custom-arrow {
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 50%;
+    padding: 15px;
+    filter: invert(1);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 8%;
+}
+.user-modal {
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.user-modal img {
+    border: 6px solid #ff7eb3;
+}

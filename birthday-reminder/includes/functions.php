@@ -56,4 +56,14 @@ function recentBirthdays($conn) {
         AND status=1
     ");
 }
+
+function userImage($image = null) {
+    if (!empty($image) && file_exists("uploads/members/" . $image)) {
+        return "uploads/members/" . $image;
+    }
+
+    return "https://i.pravatar.cc/300?img=" . rand(1, 70);
+}
+
+
 ?>
