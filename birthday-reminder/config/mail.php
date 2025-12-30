@@ -1,0 +1,3 @@
+<?php
+// Mail configuration
+// ...
