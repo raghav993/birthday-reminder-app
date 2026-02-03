@@ -7,32 +7,45 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
             </div>
 
-            <div class="modal-body text-center">
-                <img id="modalUserImage" class="rounded-circle mb-3" width="160">
+            <div class="modal-body text-center px-5">
 
-                <h3 id="modalUserName"></h3>
-                <p class="text-muted" id="modalUserGender"></p>
+                <!-- Profile Image -->
+                <img id="modalUserImage"
+                     class="rounded-circle mb-3 user-modal-img">
 
-                <div class="row mt-4">
-                    <div class="col-md-6">
-                        <strong>🎂 DOB</strong>
-                        <p id="modalUserDob"></p>
+                <!-- Name -->
+                <h3 id="modalUserName" class="fw-bold mb-1"></h3>
+                <p class="text-muted mb-4" id="modalUserGender"></p>
+
+                <!-- Info Grid -->
+                <div class="row text-center gy-4">
+
+                    <div class="col-md-4">
+                        <div class="">
+                            <div class="">🎂 DOB</div>
+                            <div class="" id="modalUserDob"></div>
+                        </div>
                     </div>
-                    <div class="col-md-6">
-                        <strong>📞 Mobile</strong>
-                        <p id="modalUserMobile"></p>
+
+                    <div class="col-md-4">📞 Mobile
+                            <div class="" id="modalUserMobile"></div>
+                        
                     </div>
+
+                    <div class="col-md-4">
+                        <div class="">
+                            <div class="">📩 Email</div>
+                            <div class="" id="modalUserEmail"></div>
+                        </div>
+                    </div>
+
                 </div>
 
-                <div class="mt-3">
-                    <strong>📧 Email</strong>
-                    <p id="modalUserEmail"></p>
-                </div>
             </div>
-
         </div>
     </div>
 </div>
+
 
 <footer class="birthday-footer mt-5">
     <div class="container py-4">

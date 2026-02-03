@@ -48,8 +48,7 @@ include 'includes/header.php'; ?>
         <div class="col-md-4">
             <h4 class="section-title">🎉 Today's Birthdays</h4>
             <?php foreach (todayBirthdays($conn) as $t): ?>
-                <div class="birthday-card mb-4">
-                    <!-- <img src="<?= userImage($t['image']) ?>" class="w-100"> -->
+                <div class="birthday-card mb-4 text-center pt-3">
                     <img src="<?= userImage($t['image']) ?>"
                         class="rounded-circle user-click"
                         data-name="<?= $t['name'] ?>"
